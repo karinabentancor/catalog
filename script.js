@@ -8,12 +8,11 @@ fetch("books.json")
         <div class="book ${book.available ? "" : "not-available"}">
           <img src="${book.image}" alt="${book.title}">
           <h3>${book.title}</h3>
-          <p><strong>Author:</strong> ${book.author}</p>
-          <p><strong>Publisher:</strong> ${book.publisher}</p>
-          <p><strong>Pages:</strong> ${book.pages}</p>
-          <p><strong>Language:</strong> ${book.language}</p>
-          <p>${book.description}</p>
-          <p class="price">$${book.price}</p>
+          <p><strong>Autor/a:</strong> ${book.author}</p>
+          <p><strong>Editorial:</strong> ${book.publisher}</p>
+          <p><strong>Páginas:</strong> ${book.pages}</p>
+          <p><strong>Idioma:</strong> ${book.language}</p>
+          <p><strong>Idioma original: </strong> ${book.languageOriginal}</p>
           ${status}
         </div>
       `;
